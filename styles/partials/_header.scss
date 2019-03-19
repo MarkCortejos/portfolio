@@ -1,0 +1,62 @@
+// ==========HEADER STYLING==========
+header {
+  max-width: 900px;
+  margin-bottom: 30px;
+}
+
+.logo {
+  margin-left: 25px;
+  margin-top: 10px;
+  width: 65px;
+}
+
+.dropMenu {
+  cursor: pointer;
+  position: fixed;
+  text-align: right;
+  top: 10px;
+  right: 25px;
+  z-index: 10;
+
+  a {
+    font-size: .9rem;
+    padding: 10px 0;
+  }
+
+  i {
+    padding: 10px;
+    position: relative;
+  }
+  
+  .fa-bars{
+    &::after {
+      content: '\f111';
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      color: $accentOne;
+      font-size: 2rem;
+      z-index: -10;
+      position: absolute;
+      top: 1px;
+      left: 0;
+      transition: all .3s;
+    }  
+    
+    &::before {
+      font-size: 1.15rem
+    }
+  }
+
+  li {
+    display:none;
+    padding: 5px 0;
+    transition: all .3s;
+  }
+  
+  &:hover li {
+    display: block;
+    bottom: 0;
+    right: 0;
+    transition: all .3s;
+  }
+}

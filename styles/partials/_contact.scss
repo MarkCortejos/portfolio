@@ -1,0 +1,77 @@
+.contact {
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
+  min-width: 288px;
+  
+  h1 {
+    margin: 140px 0 30px;
+  }
+}
+
+
+.formLayout {
+  width: 90%;
+  padding: 15px;
+
+  h2 {
+    margin-bottom: 15px;
+  }
+
+  form {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  
+  input[type="text"], input[type="email"] {
+    display: inline-block;
+    width: 100%;
+    color: $textColor;
+    border: 1px solid grey;
+    margin-bottom: 10px;
+    background: $secondary;
+
+  }
+  
+  input[type="text"]::placeholder, input[type="email"]::placeholder, textarea::placeholder {
+    font-weight: lighter;
+    color: grey
+  }
+  
+  input {
+    border: 1px solid transparent;
+    padding: 2.5px 10px;
+
+    &:focus {
+      border: 1px solid $accentOne;
+      background: $button
+    }
+
+  }
+
+  textarea {
+    display: block;
+    max-height: 180px;
+    color: $textColor;
+    width: 100%;
+    resize: none;
+    padding: 5px 10px;
+    border: 1px solid grey;
+    background: $secondary;
+    
+    &:focus {
+      border: 1px solid $accentOne;
+      background: $button;
+    }
+  }
+
+  textarea::placeholder {
+    font-weight: lighter;
+  }
+
+  .button {
+    width: 100%;
+    border: none;
+  }
+}

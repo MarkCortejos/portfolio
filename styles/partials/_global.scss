@@ -1,0 +1,99 @@
+// ==========COLOR PALETTE==========
+// background pattern from www.toptal.com/designers/subtlepatterns/
+$primary: linear-gradient(rgba(38,45,53,.85) rgba(38,45,53,.85)), url('/assets/ep_naturalblack.png') repeat;
+$secondary: linear-gradient(rgba(30, 35, 40,.85) rgba(30, 35, 40,.85)), url('/assets/ep_naturalblack.png') repeat;
+// $secondary: rgba(30, 35, 40, .85);
+$button: #101316;
+$textColor: #FFF;
+$accentOne: #00A651;
+$accentTwo: #39b54a;
+
+// ==========FONTS==========
+$textFont: "Poppins", sans-serif; 
+
+
+//==========GENERAL STYLING==========
+html {
+  font-size: 125%;
+}
+
+body {
+  background: $primary;
+  color: $textColor;
+  font-family: $textFont;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color:$textColor;
+  font-weight: 700;
+}
+
+p {
+  display: inline-block;
+  margin: 0;
+}
+
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  margin: 0;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0;
+  text-align: center;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 1.35rem;
+  color: $accentOne;
+}
+
+
+.wrapper {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.flexContainer {
+  display: flex;
+}
+
+.textBox {
+  background: $secondary;
+  padding: 10px;
+}
+
+.button {
+  font-size: .85rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: $textColor;
+  text-align: center;
+  margin: 10px 0;
+  width: 47.5%;
+  padding: 5px 10px;
+  background-color: $button;
+  border-radius: 50px;
+  transition: all .3s;
+
+  &:hover {
+    background-color: $accentOne;
+  }
+}

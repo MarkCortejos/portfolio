@@ -1,0 +1,38 @@
+.gallery {
+  max-width: 1170px;
+  h1 {
+    margin: 150px 0 20px;
+  }
+}
+
+.galleryContent {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: space-between;
+}
+
+.galleryItem {
+  margin: 10px;
+  padding: 10px;
+  min-width: 290px;
+  width: 80%;
+  max-width: 475px;
+  min-height: 550px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.galleryImg {
+  width: 100%;
+  padding: 5px;
+}
+
+.galleryText {
+  padding: 0 7.5px;
+}
+
+.galleryLinks {
+  width: 100%;
+  justify-content: space-evenly;
+}
