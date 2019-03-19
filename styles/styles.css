@@ -208,9 +208,9 @@ h2 {
   padding: 10px; }
 
 .button {
-  font-size: .85rem;
+  font-size: .8rem;
   font-weight: 700;
-  letter-spacing: 1px;
+  letter-spacing: .5px;
   color: #FFF;
   text-align: center;
   margin: 10px 0;
@@ -233,47 +233,87 @@ header {
   margin-top: 10px;
   width: 65px; }
 
-.dropMenu {
+.hamburger .fa-bars {
+  padding: 10px;
   cursor: pointer;
   position: fixed;
   text-align: right;
   top: 10px;
   right: 25px;
   z-index: 10; }
-  .dropMenu a {
-    font-size: .9rem;
-    padding: 10px 0; }
-  .dropMenu i {
-    padding: 10px;
-    position: relative; }
-  .dropMenu .fa-bars::after {
+  .hamburger .fa-bars::after {
     content: '\f111';
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
     color: #00A651;
-    font-size: 2rem;
+    font-size: 40px;
     z-index: -10;
     position: absolute;
     top: 1px;
-    left: 0;
-    -webkit-transition: all .3s;
-    -o-transition: all .3s;
-    transition: all .3s; }
-  .dropMenu .fa-bars::before {
-    font-size: 1.15rem; }
-  .dropMenu li {
-    display: none;
-    padding: 5px 0;
-    -webkit-transition: all .3s;
-    -o-transition: all .3s;
-    transition: all .3s; }
-  .dropMenu:hover li {
+    left: 0; }
+  .hamburger .fa-bars::before {
+    font-size: 21px; }
+
+.hamburger .fa-times {
+  padding: 10px;
+  cursor: pointer;
+  position: fixed;
+  text-align: right;
+  top: 10px;
+  right: 25px;
+  z-index: 10;
+  color: #101316; }
+  .hamburger .fa-times::after {
+    content: '\f111';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: #00A651;
+    font-size: 40px;
+    z-index: -10;
+    position: absolute;
+    top: 1px;
+    left: -3px; }
+  .hamburger .fa-times::before {
+    font-size: 22px; }
+
+.dropMenu {
+  display: none;
+  position: absolute; }
+
+.menu {
+  position: fixed;
+  text-align: right;
+  top: 50px;
+  right: 25px;
+  z-index: 10; }
+  .menu li {
     display: block;
-    bottom: 0;
-    right: 0;
+    padding: 5px 0; }
+  .menu a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: .9rem;
+    padding: 5px 13px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 160px;
+    margin: -3px;
+    background: #101316;
+    border: 2px solid #00A651;
+    border-radius: 50px;
     -webkit-transition: all .3s;
     -o-transition: all .3s;
     transition: all .3s; }
+    .menu a:hover, .menu a:focus {
+      background: #00A651;
+      -webkit-transition: all .3s;
+      -o-transition: all .3s;
+      transition: all .3s; }
 
 footer {
   padding: 10px;
@@ -292,10 +332,10 @@ small {
   display: block; }
 
 .links {
-  width: 50%;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
+  max-width: 250px;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly; }
   .links a {
     padding: 7.5px;
     margin: 0 2.5px; }
@@ -304,7 +344,7 @@ small {
   .links i {
     padding: 5px;
     display: block;
-    font-size: 1rem;
+    font-size: 20px;
     color: #FFF;
     position: relative; }
     .links i::after {
@@ -312,7 +352,7 @@ small {
       font-family: 'Font Awesome 5 Free';
       font-weight: 900;
       color: #101316;
-      font-size: 2rem;
+      font-size: 40px;
       z-index: -10;
       position: absolute;
       top: -5px;
@@ -320,8 +360,8 @@ small {
       -webkit-transition: all .3s;
       -o-transition: all .3s;
       transition: all .3s; }
-  .links .linkedIn::after {
-    left: -6px; }
+  .links .linkedin::after {
+    left: -7px; }
   .links .medium::after {
     left: -4.5px; }
 
@@ -497,8 +537,9 @@ small {
   .formLayout input {
     border: 1px solid transparent;
     padding: 2.5px 10px; }
-    .formLayout input:focus {
-      border: 1px solid #00A651;
+    .formLayout input:hover, .formLayout input:focus, .formLayout input:active {
+      border: 1px solid #00A651; }
+    .formLayout input:focus, .formLayout input:active {
       background: #101316; }
   .formLayout textarea {
     display: block;
@@ -512,8 +553,9 @@ small {
     background: -webkit-linear-gradient(rgba(30, 35, 40, 0.85) rgba(30, 35, 40, 0.85)), url("/assets/ep_naturalblack.png") repeat;
     background: -o-linear-gradient(rgba(30, 35, 40, 0.85) rgba(30, 35, 40, 0.85)), url("/assets/ep_naturalblack.png") repeat;
     background: linear-gradient(rgba(30, 35, 40, 0.85) rgba(30, 35, 40, 0.85)), url("/assets/ep_naturalblack.png") repeat; }
-    .formLayout textarea:focus {
-      border: 1px solid #00A651;
+    .formLayout textarea:hover, .formLayout textarea:focus, .formLayout textarea:active {
+      border: 1px solid #00A651; }
+    .formLayout textarea:focus, .formLayout textarea:active {
       background: #101316; }
   .formLayout textarea::-webkit-input-placeholder {
     font-weight: lighter; }

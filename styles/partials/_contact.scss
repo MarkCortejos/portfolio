@@ -43,8 +43,11 @@
     border: 1px solid transparent;
     padding: 2.5px 10px;
 
-    &:focus {
+    &:hover, &:focus, &:active {
       border: 1px solid $accentOne;
+    }
+    
+    &:focus, &:active {
       background: $button
     }
 
@@ -60,9 +63,12 @@
     border: 1px solid grey;
     background: $secondary;
     
-    &:focus {
+    &:hover, &:focus, &:active {
       border: 1px solid $accentOne;
-      background: $button;
+    }
+    
+    &:focus, &:active {
+      background: $button
     }
   }
 
