@@ -10,4 +10,8 @@ $(function() {
     $('.dropMenu').slideToggle();
   })
 
+  $('#contact').on('submit', function(event) {
+    event.preventDefault();
+  })
+
 }) // Doc Ready Ends
