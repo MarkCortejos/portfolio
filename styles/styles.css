@@ -442,6 +442,7 @@ small {
   margin-bottom: 10px; }
   .skills svg {
     width: 60px;
+    height: 60px;
     margin: 5px; }
     .skills svg path {
       fill: #00A651; }
