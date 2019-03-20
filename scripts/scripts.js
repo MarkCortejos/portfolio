@@ -1,5 +1,26 @@
+mySite = {}
+
+mySite.clearFields = () => {
+  setTimeout(function() {
+    $('#nameField').val('');
+    $('#emailField').val('');
+    $('#messageField').val('');
+  }, 500)
+
+  // swal("Here's the title!", "...and here's the text!")
+  Swal.fire({
+    title: 'Message Sent!',
+    text: 'Looking forward to chatting with you!',
+    type: 'success',
+    confirmButtonText: 'Continue',
+    background: 'rgb(30, 35, 40)',
+    confirmButtonColor: '#00A651',
+  })
+}
+
 // Doc Ready Begins
 $(function() {
+
 
   // Smooth scroll
   $('a').smoothScroll({
@@ -18,9 +39,8 @@ $(function() {
     $('.dropMenu').slideToggle();
   });
 
-  // prevent refresh on form submit
-  $('#contact').on('submit', function(event) {
-    event.preventDefault();
+  $('#contact').on('submit', function() {
+    mySite.clearFields();
   })
 
 }) // Doc Ready Ends

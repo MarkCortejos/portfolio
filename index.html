@@ -7,16 +7,21 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
 		integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+	<link rel="manifest" href="/assets/site.webmanifest">
 	<link rel="stylesheet" href="/styles/styles.css">
 	<title>Mark Cortejos</title>
 </head>
 <body>
 	<header id="about">
-		<div class="logo">
+		<div data-aos='fade-in' class="logo">
 			<img src="/assets/logo.png" alt="Mark's logo">
 		</div>
 		
-		<nav>
+		<nav data-aos='fade-in'>
 			<div class="hamburger">
 				<i class="fas fa-bars"></i>
 				<!-- f0c9 -->
@@ -36,7 +41,7 @@
 	
 	<main>
 		<!-- About -->
-		<section class="about textBox flexContainer wrapper">
+		<section data-aos='fade-up' class="about textBox flexContainer wrapper">
 			
 			<div class="profilePic">
 				<img src="assets/markpic.jpg" alt="A picture of Mark">
@@ -98,10 +103,10 @@
 
 		<!-- Gallery -->
 		<section class="gallery wrapper" id="work">
-			<h1>Work</h1>
+			<h1 data-aos='fade-up'>Work</h1>
 			<div class="galleryContent flexContainer">
 
-				<div class="galleryItem textBox flexContainer">
+				<div data-aos='fade-up' class="galleryItem textBox flexContainer">
 					<div class="container">
 						<div class="galleryImg">
 							<img src="assets/litTracker.jpg" alt="A screenshot of Mark's project, Lit Tracker">
@@ -118,7 +123,7 @@
 					</div>
 				</div>
 
-				<div class="galleryItem textBox flexContainer">
+				<div data-aos='fade-up' class="galleryItem textBox flexContainer">
 					<div class="container">
 						<div class="galleryImg">
 							<img src="assets/infinityScroll.jpg" alt="A screenshot of Mark's project, Dungeons & Dragons Infinity Scroll">
@@ -135,7 +140,7 @@
 					</div>
 				</div>
 
-				<div class="galleryItem textBox flexContainer">
+				<div data-aos='fade-up' class="galleryItem textBox flexContainer">
 					<div class="container">
 						<div class="galleryImg">
 							<img src="assets/madMax.jpg" alt="A screenshot of Mark's project, Mad Max Name Generator">
@@ -151,7 +156,7 @@
 					</div>
 				</div>
 
-				<div class="galleryItem textBox flexContainer">
+				<div data-aos='fade-up' class="galleryItem textBox flexContainer">
 					<div class="container">
 						<div class="galleryImg">
 							<img src="assets/truthyFalsy.jpg" alt="A screenshot of Mark's project, Truthy/Falsy">
@@ -167,7 +172,7 @@
 					</div>
 				</div>
 
-				<div class="galleryItem textBox flexContainer">
+				<div data-aos='fade-up' class="galleryItem textBox flexContainer">
 					<div class="container">
 						<div class="galleryImg">
 							<img src="assets/beachstays.jpg" alt="A screenshot of Mark's project, Beachstays">
@@ -183,7 +188,7 @@
 					</div>
 				</div>
 
-				<div class="galleryItem textBox flexContainer">
+				<div data-aos='fade-up' class="galleryItem textBox flexContainer">
 					<div class="container">
 						<div class="galleryImg">
 							<img src="assets/bikerland.jpg" alt="A screenshot of Mark's project, Bikerland">
@@ -203,21 +208,29 @@
 
 		<!-- Contact -->
 		<section class="contact wrapper flexContainer">
-			<h1>Contact</h1>
-			<div class="textBox formLayout">
+			<h1 data-aos='fade-up'>Contact</h1>
+			<div data-aos='fade-up' class="textBox formLayout">
 				<h2>Let's connect:</h2>
-				<form id="contact" action="#" class="flexContainer">
-					<input aria-label="Enter Name" id="nameField" type="text" placeholder="Name">
-					<input aria-label="Enter Email" id="emailField" type="email" placeholder="Email">
-					<textarea aria-label="Enter Message" id="messageField" tabindex="0" cols="30" rows="10" placeholder="Message"></textarea>
+				<!-- action="https://docs.google.com/forms/d/e/1FAIpQLSerxjZG8inZFxj1iMo2AcBxu9bgLAfjeqM5mSWgvS3MkC0I-g/viewform?embedded=true" -->
+				<form id="contact"
+				action="https://docs.google.com/forms/d/e/1FAIpQLSerxjZG8inZFxj1iMo2AcBxu9bgLAfjeqM5mSWgvS3MkC0I-g/formResponse" 
+				class="form flexContainer" target="googleForm" method="POST">
+					<input name="entry.2005620554" aria-label="Enter Name" id="nameField" type="text" placeholder="Name">
+					<input name="entry.1045781291" aria-label="Enter Email" id="emailField" type="email" placeholder="Email">
+					<textarea name="entry.839337160" aria-label="Enter Message" id="messageField" tabindex="0" cols="30" rows="10" placeholder="Message"></textarea>
 					<button class="button">Send Message</button>
 				</form>
 			</div>
+
+
+			<iframe name="googleForm"
+				src="https://docs.google.com/forms/d/e/1FAIpQLSerxjZG8inZFxj1iMo2AcBxu9bgLAfjeqM5mSWgvS3MkC0I-g/viewform?embedded=true"
+				width="0" height="0" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 		</section> <!-- /.contact -->
 
 	</main>
 
-	<footer class=" wrapper flexContainer">
+	<footer class="wrapper flexContainer">
 		<div class="links flexContainer">
 			<a aria-label="Go to Mark's LinkedIn profile" href="https://www.linkedin.com/in/markcortejos">
 				<i class="linkedin fab fa-linkedin-in"></i>
@@ -237,7 +250,12 @@
 
 	<script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js'></script>
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js'></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8.5.0/dist/sweetalert2.all.min.js"></script>
+	<script>
+		AOS.init();
+	</script>
 	<script src='/scripts/scripts.js'></script>
 </body>
 </html>
