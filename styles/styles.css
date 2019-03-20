@@ -149,10 +149,10 @@ html {
   font-size: 125%; }
 
 body {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(38, 45, 53, 0.85))), url("/assets/ep_naturalblack.png") repeat;
-  background: -webkit-linear-gradient(rgba(38, 45, 53, 0.85) rgba(38, 45, 53, 0.85)), url("/assets/ep_naturalblack.png") repeat;
-  background: -o-linear-gradient(rgba(38, 45, 53, 0.85) rgba(38, 45, 53, 0.85)), url("/assets/ep_naturalblack.png") repeat;
-  background: linear-gradient(rgba(38, 45, 53, 0.85) rgba(38, 45, 53, 0.85)), url("/assets/ep_naturalblack.png") repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(38, 45, 53, 0.9))), url("/assets/ep_naturalblack.png") repeat;
+  background: -webkit-linear-gradient(rgba(38, 45, 53, 0.9) rgba(38, 45, 53, 0.9)), url("/assets/ep_naturalblack.png") repeat;
+  background: -o-linear-gradient(rgba(38, 45, 53, 0.9) rgba(38, 45, 53, 0.9)), url("/assets/ep_naturalblack.png") repeat;
+  background: linear-gradient(rgba(38, 45, 53, 0.9) rgba(38, 45, 53, 0.9)), url("/assets/ep_naturalblack.png") repeat;
   color: #FFF;
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
@@ -163,8 +163,7 @@ img {
 
 a {
   text-decoration: none;
-  color: #FFF;
-  font-weight: 700; }
+  color: #FFF; }
 
 p {
   display: inline-block;
@@ -176,24 +175,25 @@ ul, li {
   padding: 0; }
 
 h1, h2 {
-  margin: 0;
-  line-height: 1.2; }
+  line-height: 1.2;
+  font-weight: 700; }
 
 h1 {
   font-size: 1.8rem;
-  font-weight: 700;
-  margin: 0;
+  margin: 0 0 30px;
   text-align: center; }
 
 h2 {
-  font-weight: 700;
   font-size: 1.35rem;
-  color: #00A651; }
+  color: #00A651;
+  margin: 10px 0; }
 
 .wrapper {
-  width: 90%;
-  max-width: 1100px;
+  min-width: 290px;
   margin: 0 auto; }
+
+.about, .gallery {
+  margin-bottom: 45px; }
 
 .flexContainer {
   display: -webkit-box;
@@ -201,16 +201,15 @@ h2 {
   display: flex; }
 
 .textBox {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(30, 35, 40, 0.85))), url("/assets/ep_naturalblack.png") repeat;
-  background: -webkit-linear-gradient(rgba(30, 35, 40, 0.85) rgba(30, 35, 40, 0.85)), url("/assets/ep_naturalblack.png") repeat;
-  background: -o-linear-gradient(rgba(30, 35, 40, 0.85) rgba(30, 35, 40, 0.85)), url("/assets/ep_naturalblack.png") repeat;
-  background: linear-gradient(rgba(30, 35, 40, 0.85) rgba(30, 35, 40, 0.85)), url("/assets/ep_naturalblack.png") repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(30, 35, 40, 0.9))), url("/assets/ep_naturalblack.png") repeat;
+  background: -webkit-linear-gradient(rgba(30, 35, 40, 0.9) rgba(30, 35, 40, 0.9)), url("/assets/ep_naturalblack.png") repeat;
+  background: -o-linear-gradient(rgba(30, 35, 40, 0.9) rgba(30, 35, 40, 0.9)), url("/assets/ep_naturalblack.png") repeat;
+  background: linear-gradient(rgba(30, 35, 40, 0.9) rgba(30, 35, 40, 0.9)), url("/assets/ep_naturalblack.png") repeat;
   padding: 10px; }
 
 .button {
   font-size: .8rem;
-  font-weight: 700;
-  letter-spacing: .5px;
+  letter-spacing: .75px;
   color: #FFF;
   text-align: center;
   margin: 10px 0;
@@ -220,9 +219,14 @@ h2 {
   border-radius: 50px;
   -webkit-transition: all .3s;
   -o-transition: all .3s;
-  transition: all .3s; }
-  .button:hover {
+  transition: all .3s;
+  border: 1px solid #00A651; }
+  .button:focus, .button:active {
     background-color: #00A651; }
+
+@media (min-width: 760px) {
+  .button:hover {
+    background-color: #00A651; } }
 
 header {
   max-width: 900px;
@@ -304,16 +308,23 @@ header {
     width: 160px;
     margin: -3px;
     background: #101316;
-    border: 2px solid #00A651;
+    border: 1.5px solid #00A651;
     border-radius: 50px;
     -webkit-transition: all .3s;
     -o-transition: all .3s;
     transition: all .3s; }
-    .menu a:hover, .menu a:focus {
+    .menu a:focus {
       background: #00A651;
       -webkit-transition: all .3s;
       -o-transition: all .3s;
       transition: all .3s; }
+
+@media (min-width: 760px) {
+  .menu a:hover {
+    background: #00A651;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s; } }
 
 footer {
   padding: 10px;
@@ -321,9 +332,6 @@ footer {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
@@ -332,14 +340,14 @@ small {
   display: block; }
 
 .links {
-  max-width: 250px;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly; }
+  max-width: 275px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
   .links a {
     padding: 7.5px;
     margin: 0 2.5px; }
-    .links a:hover i::after {
+    .links a:focus i::after, .links a:active i::after {
       color: #00A651; }
   .links i {
     padding: 5px;
@@ -365,6 +373,10 @@ small {
   .links .medium::after {
     left: -4.5px; }
 
+@media (min-width: 760px) {
+  .links a:hover i::after {
+    color: #00A651; } }
+
 .about {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -374,7 +386,7 @@ small {
   -ms-flex-pack: center;
   justify-content: center;
   min-width: 290px;
-  max-width: 520px; }
+  max-width: 475px; }
 
 .profilePic {
   min-width: 180px;
@@ -397,10 +409,12 @@ small {
 
 .title {
   text-align: center; }
+  .title h1 {
+    margin: 0; }
 
 .bio {
   margin-top: 10px;
-  padding: 10px;
+  padding: 10px 0;
   max-width: 90%; }
 
 .skills {
@@ -444,38 +458,35 @@ small {
     padding: 0; } }
 
 .gallery {
-  max-width: 1170px; }
-  .gallery h1 {
-    margin: 150px 0 20px; }
+  max-width: 970px; }
 
 .galleryContent {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: space-between;
-  -ms-flex-align: space-between;
-  align-items: space-between; }
-
-.galleryItem {
-  margin: 10px;
-  padding: 10px;
-  min-width: 290px;
-  width: 80%;
-  max-width: 475px;
-  min-height: 550px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 30px; }
+
+.galleryItem {
+  margin: 15px 0;
+  padding: 10px;
+  min-width: 290px;
+  max-width: 475px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
+  .galleryItem:nth-of-type(6) {
+    margin-bottom: 0; }
 
 .galleryImg {
   width: 100%;
@@ -490,6 +501,23 @@ small {
   -ms-flex-pack: space-evenly;
   justify-content: space-evenly; }
 
+@media (min-width: 1100px) {
+  .galleryContent {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .galleryItem {
+    min-height: 570px;
+    margin: 0 0 20px; }
+    .galleryItem:nth-of-type(6) {
+      margin-bottom: 20px; } }
+
 .contact {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -498,16 +526,11 @@ small {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  max-width: 500px;
-  min-width: 288px; }
-  .contact h1 {
-    margin: 140px 0 30px; }
+  min-width: 290px;
+  max-width: 475px; }
 
 .formLayout {
-  width: 90%;
   padding: 15px; }
-  .formLayout h2 {
-    margin-bottom: 15px; }
   .formLayout form {
     width: 100%;
     -ms-flex-wrap: wrap;
@@ -518,10 +541,10 @@ small {
     color: #FFF;
     border: 1px solid grey;
     margin-bottom: 10px;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(30, 35, 40, 0.85))), url("/assets/ep_naturalblack.png") repeat;
-    background: -webkit-linear-gradient(rgba(30, 35, 40, 0.85) rgba(30, 35, 40, 0.85)), url("/assets/ep_naturalblack.png") repeat;
-    background: -o-linear-gradient(rgba(30, 35, 40, 0.85) rgba(30, 35, 40, 0.85)), url("/assets/ep_naturalblack.png") repeat;
-    background: linear-gradient(rgba(30, 35, 40, 0.85) rgba(30, 35, 40, 0.85)), url("/assets/ep_naturalblack.png") repeat; }
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(30, 35, 40, 0.9))), url("/assets/ep_naturalblack.png") repeat;
+    background: -webkit-linear-gradient(rgba(30, 35, 40, 0.9) rgba(30, 35, 40, 0.9)), url("/assets/ep_naturalblack.png") repeat;
+    background: -o-linear-gradient(rgba(30, 35, 40, 0.9) rgba(30, 35, 40, 0.9)), url("/assets/ep_naturalblack.png") repeat;
+    background: linear-gradient(rgba(30, 35, 40, 0.9) rgba(30, 35, 40, 0.9)), url("/assets/ep_naturalblack.png") repeat; }
   .formLayout input[type="text"]::-webkit-input-placeholder, .formLayout input[type="email"]::-webkit-input-placeholder, .formLayout textarea::-webkit-input-placeholder {
     font-weight: lighter;
     color: grey; }
@@ -549,10 +572,10 @@ small {
     resize: none;
     padding: 5px 10px;
     border: 1px solid grey;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(30, 35, 40, 0.85))), url("/assets/ep_naturalblack.png") repeat;
-    background: -webkit-linear-gradient(rgba(30, 35, 40, 0.85) rgba(30, 35, 40, 0.85)), url("/assets/ep_naturalblack.png") repeat;
-    background: -o-linear-gradient(rgba(30, 35, 40, 0.85) rgba(30, 35, 40, 0.85)), url("/assets/ep_naturalblack.png") repeat;
-    background: linear-gradient(rgba(30, 35, 40, 0.85) rgba(30, 35, 40, 0.85)), url("/assets/ep_naturalblack.png") repeat; }
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(30, 35, 40, 0.9))), url("/assets/ep_naturalblack.png") repeat;
+    background: -webkit-linear-gradient(rgba(30, 35, 40, 0.9) rgba(30, 35, 40, 0.9)), url("/assets/ep_naturalblack.png") repeat;
+    background: -o-linear-gradient(rgba(30, 35, 40, 0.9) rgba(30, 35, 40, 0.9)), url("/assets/ep_naturalblack.png") repeat;
+    background: linear-gradient(rgba(30, 35, 40, 0.9) rgba(30, 35, 40, 0.9)), url("/assets/ep_naturalblack.png") repeat; }
     .formLayout textarea:hover, .formLayout textarea:focus, .formLayout textarea:active {
       border: 1px solid #00A651; }
     .formLayout textarea:focus, .formLayout textarea:active {

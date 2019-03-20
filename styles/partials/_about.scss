@@ -2,7 +2,7 @@
   flex-direction: column;
   justify-content: center;
   min-width: 290px;
-  max-width: 520px;
+  max-width: 475px;
 }
 
 .profilePic {
@@ -27,11 +27,15 @@
 
 .title {
   text-align: center;
+  
+  h1 {
+    margin: 0;
+  }
 }
 
 .bio {
   margin-top: 10px;
-  padding: 10px;
+  padding: 10px 0;
   max-width: 90%;
 }
 
@@ -49,6 +53,8 @@
   }
 }
 
+
+// ==========MEDIA QUERIES==========
 @media (min-width: 367px) {
   .skills {
     max-width: 279.5px;

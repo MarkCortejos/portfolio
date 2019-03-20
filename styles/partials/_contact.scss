@@ -1,28 +1,18 @@
 .contact {
   flex-direction: column;
   align-items: center;
-  max-width: 500px;
-  min-width: 288px;
-  
-  h1 {
-    margin: 140px 0 30px;
-  }
+  min-width: 290px;
+  max-width: 475px;
 }
 
 
 .formLayout {
-  width: 90%;
   padding: 15px;
-
-  h2 {
-    margin-bottom: 15px;
-  }
 
   form {
     width: 100%;
     flex-wrap: wrap;
   }
-
   
   input[type="text"], input[type="email"] {
     display: inline-block;
@@ -31,7 +21,6 @@
     border: 1px solid grey;
     margin-bottom: 10px;
     background: $secondary;
-
   }
   
   input[type="text"]::placeholder, input[type="email"]::placeholder, textarea::placeholder {
@@ -50,7 +39,6 @@
     &:focus, &:active {
       background: $button
     }
-
   }
 
   textarea {
@@ -81,3 +69,5 @@
     border: none;
   }
 }
+
+// ==========MEDIA QUERIES==========
