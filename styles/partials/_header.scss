@@ -1,7 +1,7 @@
 // ==========HEADER STYLING==========
 header {
   max-width: 900px;
-  margin-bottom: 30px;
+  margin: 20px 0 30px;
 }
 
 .logo {
@@ -16,7 +16,7 @@ header {
     cursor: pointer;
     position: fixed;
     text-align: right;
-    top: 10px;
+    top: 20px;
     right: 25px;
     z-index: 10;
 
@@ -42,7 +42,7 @@ header {
     cursor: pointer;
     position: fixed;
     text-align: right;
-    top: 10px;
+    top: 20px;
     right: 25px;
     z-index: 10;
     color: $button;
@@ -73,7 +73,7 @@ header {
 .menu {
   position: fixed;
   text-align: right;
-  top: 50px;
+  top: 62.5px;
   right: 25px;
   z-index: 10;
   

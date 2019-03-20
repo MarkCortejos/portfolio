@@ -25,10 +25,23 @@
 .galleryImg {
   width: 100%;
   padding: 5px;
+
+  img {
+    border: 5px solid $button;
+    border-style: inset;
+  }
 }
 
 .galleryText {
   padding: 0 7.5px;
+  a {
+    text-decoration: underline;
+    text-decoration-color: $accentOne;
+
+    &:focus, &:active {
+      color: $accentOne;
+    }
+  }
 }
 
 .galleryLinks {
@@ -43,6 +56,14 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
+
+@media (min-width: 760px) {
+  .galleryText {
+    a:hover {
+      color: $accentOne;
+    }
+  }
+}
 
   .galleryItem {
     min-height: 570px;

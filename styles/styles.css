@@ -149,10 +149,10 @@ html {
   font-size: 125%; }
 
 body {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(38, 45, 53, 0.9))), url("/assets/ep_naturalblack.png") repeat;
-  background: -webkit-linear-gradient(rgba(38, 45, 53, 0.9) rgba(38, 45, 53, 0.9)), url("/assets/ep_naturalblack.png") repeat;
-  background: -o-linear-gradient(rgba(38, 45, 53, 0.9) rgba(38, 45, 53, 0.9)), url("/assets/ep_naturalblack.png") repeat;
-  background: linear-gradient(rgba(38, 45, 53, 0.9) rgba(38, 45, 53, 0.9)), url("/assets/ep_naturalblack.png") repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(65, 101, 138, 0.2))), url("/assets/robots.png") repeat;
+  background: -webkit-linear-gradient(rgba(65, 101, 138, 0.2) rgba(65, 101, 138, 0.2)), url("/assets/robots.png") repeat;
+  background: -o-linear-gradient(rgba(65, 101, 138, 0.2) rgba(65, 101, 138, 0.2)), url("/assets/robots.png") repeat;
+  background: linear-gradient(rgba(65, 101, 138, 0.2) rgba(65, 101, 138, 0.2)), url("/assets/robots.png") repeat;
   color: #FFF;
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
@@ -201,11 +201,13 @@ h2 {
   display: flex; }
 
 .textBox {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(30, 35, 40, 0.9))), url("/assets/ep_naturalblack.png") repeat;
-  background: -webkit-linear-gradient(rgba(30, 35, 40, 0.9) rgba(30, 35, 40, 0.9)), url("/assets/ep_naturalblack.png") repeat;
-  background: -o-linear-gradient(rgba(30, 35, 40, 0.9) rgba(30, 35, 40, 0.9)), url("/assets/ep_naturalblack.png") repeat;
-  background: linear-gradient(rgba(30, 35, 40, 0.9) rgba(30, 35, 40, 0.9)), url("/assets/ep_naturalblack.png") repeat;
-  padding: 10px; }
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(30, 35, 40, 0.75))), transparent;
+  background: -webkit-linear-gradient(rgba(30, 35, 40, 0.75) rgba(30, 35, 40, 0.75)), transparent;
+  background: -o-linear-gradient(rgba(30, 35, 40, 0.75) rgba(30, 35, 40, 0.75)), transparent;
+  background: linear-gradient(rgba(30, 35, 40, 0.75) rgba(30, 35, 40, 0.75)), transparent;
+  padding: 10px;
+  border: 5px solid #101316;
+  border-style: outset; }
 
 .button {
   font-size: .8rem;
@@ -224,13 +226,17 @@ h2 {
   .button:focus, .button:active {
     background-color: #00A651; }
 
+@media (min-width: 1100px) {
+  .about, .gallery {
+    margin-bottom: 120px; } }
+
 @media (min-width: 760px) {
   .button:hover {
     background-color: #00A651; } }
 
 header {
   max-width: 900px;
-  margin-bottom: 30px; }
+  margin: 20px 0 30px; }
 
 .logo {
   margin-left: 25px;
@@ -242,7 +248,7 @@ header {
   cursor: pointer;
   position: fixed;
   text-align: right;
-  top: 10px;
+  top: 20px;
   right: 25px;
   z-index: 10; }
   .hamburger .fa-bars::after {
@@ -263,7 +269,7 @@ header {
   cursor: pointer;
   position: fixed;
   text-align: right;
-  top: 10px;
+  top: 20px;
   right: 25px;
   z-index: 10;
   color: #101316; }
@@ -287,7 +293,7 @@ header {
 .menu {
   position: fixed;
   text-align: right;
-  top: 50px;
+  top: 62.5px;
   right: 25px;
   z-index: 10; }
   .menu li {
@@ -429,13 +435,13 @@ small {
     .skills svg path {
       fill: #00A651; }
 
-@media (min-width: 367px) {
+@media (min-width: 300px) {
   .skills {
     max-width: 279.5px; } }
 
-@media (min-width: 540px) {
+@media (min-width: 475px) {
   .skills {
-    max-width: 90%; } }
+    max-width: 95%; } }
 
 @media (min-width: 1100px) {
   .about {
@@ -491,9 +497,18 @@ small {
 .galleryImg {
   width: 100%;
   padding: 5px; }
+  .galleryImg img {
+    border: 5px solid #101316;
+    border-style: inset; }
 
 .galleryText {
   padding: 0 7.5px; }
+  .galleryText a {
+    text-decoration: underline;
+    -webkit-text-decoration-color: #00A651;
+    text-decoration-color: #00A651; }
+    .galleryText a:focus, .galleryText a:active {
+      color: #00A651; }
 
 .galleryLinks {
   width: 100%;
@@ -511,7 +526,13 @@ small {
     flex-wrap: wrap;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between; }
+    justify-content: space-between; } }
+
+@media (min-width: 1100px) and (min-width: 760px) {
+  .galleryText a:hover {
+    color: #00A651; } }
+
+@media (min-width: 1100px) {
   .galleryItem {
     min-height: 570px;
     margin: 0 0 20px; }
@@ -541,10 +562,10 @@ small {
     color: #FFF;
     border: 1px solid grey;
     margin-bottom: 10px;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(30, 35, 40, 0.9))), url("/assets/ep_naturalblack.png") repeat;
-    background: -webkit-linear-gradient(rgba(30, 35, 40, 0.9) rgba(30, 35, 40, 0.9)), url("/assets/ep_naturalblack.png") repeat;
-    background: -o-linear-gradient(rgba(30, 35, 40, 0.9) rgba(30, 35, 40, 0.9)), url("/assets/ep_naturalblack.png") repeat;
-    background: linear-gradient(rgba(30, 35, 40, 0.9) rgba(30, 35, 40, 0.9)), url("/assets/ep_naturalblack.png") repeat; }
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(30, 35, 40, 0.75))), transparent;
+    background: -webkit-linear-gradient(rgba(30, 35, 40, 0.75) rgba(30, 35, 40, 0.75)), transparent;
+    background: -o-linear-gradient(rgba(30, 35, 40, 0.75) rgba(30, 35, 40, 0.75)), transparent;
+    background: linear-gradient(rgba(30, 35, 40, 0.75) rgba(30, 35, 40, 0.75)), transparent; }
   .formLayout input[type="text"]::-webkit-input-placeholder, .formLayout input[type="email"]::-webkit-input-placeholder, .formLayout textarea::-webkit-input-placeholder {
     font-weight: lighter;
     color: grey; }
@@ -572,10 +593,10 @@ small {
     resize: none;
     padding: 5px 10px;
     border: 1px solid grey;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(30, 35, 40, 0.9))), url("/assets/ep_naturalblack.png") repeat;
-    background: -webkit-linear-gradient(rgba(30, 35, 40, 0.9) rgba(30, 35, 40, 0.9)), url("/assets/ep_naturalblack.png") repeat;
-    background: -o-linear-gradient(rgba(30, 35, 40, 0.9) rgba(30, 35, 40, 0.9)), url("/assets/ep_naturalblack.png") repeat;
-    background: linear-gradient(rgba(30, 35, 40, 0.9) rgba(30, 35, 40, 0.9)), url("/assets/ep_naturalblack.png") repeat; }
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(30, 35, 40, 0.75))), transparent;
+    background: -webkit-linear-gradient(rgba(30, 35, 40, 0.75) rgba(30, 35, 40, 0.75)), transparent;
+    background: -o-linear-gradient(rgba(30, 35, 40, 0.75) rgba(30, 35, 40, 0.75)), transparent;
+    background: linear-gradient(rgba(30, 35, 40, 0.75) rgba(30, 35, 40, 0.75)), transparent; }
     .formLayout textarea:hover, .formLayout textarea:focus, .formLayout textarea:active {
       border: 1px solid #00A651; }
     .formLayout textarea:focus, .formLayout textarea:active {
@@ -590,4 +611,4 @@ small {
     font-weight: lighter; }
   .formLayout .button {
     width: 100%;
-    border: none; }
+    border: 1px solid #00A651; }
