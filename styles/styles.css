@@ -440,13 +440,11 @@ small {
   flex-wrap: wrap;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  margin-bottom: 10px; }
+  margin: 15px -20px 10px; }
   .skills svg {
     width: 60px;
     height: 60px;
     margin: 5px; }
-    .skills svg path {
-      fill: #00A651; }
 
 @media (min-width: 300px) {
   .skills {

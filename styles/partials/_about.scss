@@ -42,15 +42,15 @@
 .skills {
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-bottom: 10px;
+  margin: 15px -20px 10px;
 
   svg {
     width: 60px;
     height: 60px;
     margin: 5px;
-    path {
-      fill: $accentOne;
-    }
+    // path {
+    //   fill: $accentOne;
+    // }
   }
 }
 
